@@ -83,7 +83,7 @@ const XYContainer: FunctionComponent<Props> = ({
       : DEFAULT_LINE_COLORS.map(c => c.hex)
 
   const interpolation =
-    resolveGeom(geom) === XYViewGeom.Step ? 'step' : 'monotoneX'
+    resolveGeom(geom) === XYViewGeom.Step ? 'step' : 'linear'
 
   const groupKey = [...fluxGroupKeyUnion, 'result']
 
